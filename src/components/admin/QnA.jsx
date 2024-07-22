@@ -45,8 +45,8 @@ const QnA = () => {
               <TableRow>
                 <Data align="center" text="Sr. No." />
                 <Data align="center" text="Name" />
-                {/* <Data align="center" text="Email" />
-                <Data align="center" text="Phone" /> */}
+                <Data align="center" text="Email" />
+                <Data align="center" text="Phone" />
                 <Data align="center" text="Message" />
                 <Data align="center" text="Reply" />
               </TableRow>
@@ -63,14 +63,14 @@ const QnA = () => {
                         text={`${ind + 1}.`}
                       />
                       <Data align="center" fromData={true} text={name} />
-                      {/* <Data align="center" fromData={true} text={email} />
-                      <Data align="center" fromData={true} text={phone} /> */}
+                      <Data align="center" fromData={true} text={email} />
+                      <Data align="center" fromData={true} text={phone} />
                       <Data align="center" fromData={true} text={message} />
                       <TableCell align="center">
                         <Reply
                           id={_id}
                           name={name}
-                          // email={email}
+                          email={email}
                           message={message}
                         />
                       </TableCell>

@@ -1,0 +1,18 @@
+[build]
+  base = "frontend"
+  publish = "build"
+  command = "npm run build"
+
+[dev]
+  framework = "#custom"
+  command = "npm start"
+  targetPort = 3000
+  port = 8888
+
+[dev.environment]
+  BROWSER = "none"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

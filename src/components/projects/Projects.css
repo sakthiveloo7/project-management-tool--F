@@ -1,0 +1,119 @@
+.Typography.heading {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.left-side-bar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    border-right: 2px solid #3f51b5;
+    overflow: scroll;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.right-side-bar {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.add-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #3f51b5;
+    cursor: pointer;
+    color: #fff;
+}
+
+.pro-box {
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.Typography.singleProTitle {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.icons {
+    display: flex;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
+}
+
+.eye-icon {
+    margin-top: -10px;
+}
+
+.date-title {
+    font-weight: bold;
+    color: #3C486B;
+}
+
+.desc-teams {
+    margin-top: 16px;
+}
+
+.Typography.team {
+    font-size: 18px;
+}
+
+.bar-icon,
+.close-icon {
+    display: none;
+}
+
+.Grid.github-details {
+    text-align: end;
+}
+
+@media only screen and (max-width:890px) {
+    .left-side-bar {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        border: 0;
+        left: -400px;
+        background: #fff;
+        padding-top: 8rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.4s;
+    }
+
+    .bar-icon,
+    .close-icon {
+        display: block;
+        position: absolute;
+        top: 6rem;
+    }
+
+    .bar-icon {
+        left: 20px;
+    }
+
+    .close-icon {
+        right: 20px;
+    }
+
+    .left-side-bar.open-left-nav {
+        left: 0;
+
+    }
+
+    .Typography.singleProTitle {
+        margin-bottom: 4px;
+    }
+
+    .Grid.github-details {
+        text-align: start;
+    }
+}

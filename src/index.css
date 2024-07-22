@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin: 8rem 0;
+  padding-bottom: 30px;
+}
+
+.hero-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* body {
+  background: url('./assets/hero-bg.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+} */
+
+.auth-image {
+  height: 88%;
+}
+
+.auth-form {
+  height: 50%;
+  overflow-y: hidden;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.logo>img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.header {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  display: inline-block;
+  margin: 0 8px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.8px;
+  font-family: "Spectral";
+}
+
+.nav-link.active {
+  color: #fff;
+}
+
+.nav-link-login {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.AppBar.nav {
+  padding: 8px 0;
+}
+
+.Typography.title {
+  font-size: 52px;
+  line-height: 4.2rem;
+  color: #3f51b5;
+}
+
+.Typography.text {
+  margin: 24px 0;
+  font-size: 17px;
+  width: 80%;
+  display: block;
+  color: #2D4356;
+  text-align: justify;
+}
+
+.hero-img {
+  animation: animate 4s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.section-container {
+  padding: 7rem 0;
+}
+
+.Typography.section-heading {
+  position: relative;
+  font-size: 42px !important;
+}
+
+.Typography.section-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 80px;
+  height: 3px;
+  background: #3f51b5;
+}
+
+.Typography.title.auth {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.input-group {
+  margin-bottom: 34px;
+}
+
+.profile {
+  float: right;
+  position: relative;
+  width: 120px;
+  box-shadow: 0 10px 30px #535b5e32;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile>img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profile>label {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  cursor: pointer;
+}
+
+.btn-profile {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.Button.forgot {
+  margin-top: 2rem;
+  color: #92A9BD;
+}
+
+.Box.auth-box {
+  padding: 20px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.Typography.logout {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background: #3f51b579;
+}
+
+.menu-nav-link {
+  text-decoration: none;
+  color: #3f51b5;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container label {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px #1113112d;
+}
+
+.contact-form img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.contact-form .auth-form {
+  height: 100%;
+  padding: 20px;
+}
+
+.FormControl.input-group {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 890px) {
+  .container {
+    margin: 8rem 0 0;
+  }
+
+  .Typography.title {
+    font-size: 44px;
+  }
+
+  .Typography.text {
+    width: 100%;
+  }
+
+  .profile {
+    float: none;
+    margin-bottom: 50px;
+  }
+
+  .links {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+    background: #008a7a;
+    transition: all 0.5s;
+  }
+
+  .links.open {
+    height: auto;
+    padding: 18px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .Button.mobile-btn {
+    margin-top: 10px;
+  }
+
+  .nav-link,
+  .Typography.logout {
+    font-size: 20px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 100%;
+  background: #fff;
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.test-image {
+  width: 320px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+.test-image>img {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px #1111113a;
+}
+
+.Typography.name {
+  font-size: 30px !important;
+}
+
+.Typography.post {
+  font-size: 20px !important;
+}
+
+.Typography.rev-message {
+  font-size: 16px !important;
+  text-align: center;
+}
+
+.guide-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guide-box .guide-name {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.chart {
+  position: relative;
+}
+
+.chart .doughtnut-div {
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.chart .status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+  z-index: -1;
+}
+
+.Typography.member-name {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.Typography.member-contro {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.Button.color-btn {
+  transform: translateY(-50%) rotate(90deg);
+  position: absolute;
+  top: 50%;
+  left: -4.6%;
+}
+
+.Button.color-btn.pie {
+  left: -5%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.event-form {
+  height: 520px;
+  overflow-y: scroll;
+}
+
+.Button.imp-btn {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.Grid.button,
+.Grid.steps {
+  text-align: end;
+}
+
+@media only screen and (max-width: 890px) {
+
+  .Grid.button,
+  .Grid.steps {
+    text-align: start;
+    margin: 20px 0;
+  }
+
+  .Grid.steps {
+    margin: 0;
+  }
+}
+
+.otp-container {
+  width: 300px;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Typography.guide-dash-title {
+  font-size: 35px;
+}
+
+.Typography.guide-request-title {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+.Typography.no {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 890px) {
+
+  .main-container,
+  .otp-container {
+    width: 100% !important;
+  }
+
+  .hero-container {
+    height: 130vh;
+  }
+
+  .Button.auth-btn {
+    width: 100%;
+  }
+
+  .Typography.auth-text {
+    text-align: start;
+    margin-top: 1rem;
+  }
+
+  .Typography.section-heading {
+    font-size: 46px;
+    text-align: center;
+  }
+
+  .Typography.section-heading::after {
+    display: none;
+  }
+
+  .Typography.about-heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-card {
+    padding: 0;
+  }
+
+  .test-image {
+    width: 100px;
+  }
+
+  .Typography.name {
+    font-size: 26px !important;
+  }
+
+  .Typography.post {
+    font-size: 16px !important;
+  }
+
+  .Typography.rev-message {
+    font-size: 12px !important;
+    text-align: justify;
+  }
+
+  .contact-form img {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 0;
+  }
+
+  .Button.color-btn.pie {
+    left: -7.5%;
+  }
+
+  .Button.color-btn {
+    left: -7.5%;
+  }
+
+  .chart .doughtnut-div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chart .status {
+    transform: translate(-50%, -50%);
+  }
+
+  .Typography.member-name {
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+  }
+
+  .Typography.member-contro {
+    margin-left: 0;
+    display: block;
+    font-size: 16px;
+  }
+
+  .Typography.guide-dash-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .Typography.guide-request-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .Typography.no {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .image-container {
+    width: 250px;
+    margin: 0 auto 1rem;
+  }
+
+  .image-container label {
+    bottom: 0;
+  }
+
+  .Box.auth-box {
+    padding: 0;
+  }
+}

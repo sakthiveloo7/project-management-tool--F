@@ -1,0 +1,76 @@
+.icon.close-icon-admin-dash {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.nav-side-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+.nav-side-link:hover {
+    color: inherit;
+}
+
+.nav-side-link.active .ListItem {
+    background: #3f51b5;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.nav-side-link.active .ListItemIcon {
+    color: #fff;
+}
+
+.dash-icon {
+    margin-right: 8px;
+    color: #111;
+}
+
+.dash-card {
+    transition: all 0.4s;
+}
+
+.dash-card:hover {
+    transform: translateY(-8px);
+}
+
+.dash-link {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFB73;
+    font-weight: bold;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.height-box {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.pie-div {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.Typography.admin-title {
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 890px) {
+    .Typography.admin-title {
+        font-size: 32px;
+    }
+}

@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Project Management Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+The Project Management Tool is a comprehensive solution designed to facilitate effective project and task management. It offers features such as role-based access control, task assignment, progress tracking, and report generation. This tool aims to streamline project workflows and enhance productivity.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Task Management**: Create, update, and delete tasks.
+- **Project Management**: Manage multiple projects and track their progress.
+- **Role-Based Access Control**: Assign roles to users and control access to various features.
+- **Report Generation**: Generate detailed reports on project progress.
+- **Responsive Design**: Fully responsive design for optimal use on any device.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Languages
 
-### `npm run build`
+- **JavaScript**: The primary language used for both frontend and backend development.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js**: A JavaScript library for building user interfaces. Used for developing the client-side of the application.
+- **Material-UI**: A popular React UI framework used for styling and responsive design.
+- **Axios**: A promise-based HTTP client for the browser and Node.js, used for making API requests.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend
 
-### `npm run eject`
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine. Used for building the server-side of the application.
+- **Express.js**: A web application framework for Node.js. Used to set up the API and handle requests and responses.
+- **MongoDB**: A NoSQL database program. Used for storing data in a flexible, JSON-like format.
+- **Mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js. Used to interact with MongoDB.
+- **bcryptjs**: A library to help you hash passwords.
+- **jsonwebtoken (JWT)**: A library used for authentication and authorization.
+- **Nodemailer**: A module for Node.js applications to allow easy email sending.
+- **dotenv**: A module to load environment variables from a `.env` file into `process.env`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Other Technologies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Google OAuth**: Used for authenticating users via their Google accounts.
+- **Cloudinary**: A cloud-based service for managing images and videos, used for storing and serving uploaded files.
+- **Multer**: A Node.js middleware for handling `multipart/form-data`, which is used for uploading files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To get a local copy up and running, follow these simple steps.
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Node.js
+- npm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the backend repository
+   ```sh
+   git clone https://github.com/sakthiveloo7/project-management-tool--F.git
